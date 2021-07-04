@@ -72,6 +72,7 @@ CREATE TABLE COMPRA
 	ESTADO VARCHAR(20),
 	TOTAL_COMPRA INT,
 	COD_DIRECCION INT,
+	PRIMARY KEY(COD_COMPRA),
 	FOREIGN KEY (COD_DIRECCION) REFERENCES DIRECCION
 );
 
@@ -81,7 +82,7 @@ CREATE TABLE EVALUA
 	COMENTARIO_PRODUCTO VARCHAR(20),
 	RUT_CLIENTE VARCHAR(20),
 	COD_COMPRA INTEGER,
-	PRIMARY KEY(RUT_CLIENTE),
+	PRIMARY KEY(RUT_CLIENTE, COD_COMPRA),
 	FOREIGN KEY (RUT_CLIENTE) REFERENCES CLIENTE,
 	FOREIGN KEY (COD_COMPRA) REFERENCES COMPRA
 );
@@ -90,7 +91,7 @@ CREATE TABLE REALIZA
 (
 	RUT_CLIENTE VARCHAR(20),
 	COD_COMPRA INTEGER,
-	PRIMARY KEY(RUT_CLIENTE),
+	PRIMARY KEY(RUT_CLIENTE, COD_COMPRA),
 	FOREIGN KEY (RUT_CLIENTE) REFERENCES CLIENTE,
 	FOREIGN KEY (COD_COMPRA) REFERENCES COMPRA
 );
@@ -101,6 +102,7 @@ CREATE TABLE ORIGINA
 	TOTAL_PRODUCTO INT,
 	COD_PRODUCTO INT,
 	COD_COMPRA INT,
+	PRIMARY KEY(COD_PRODUCTO, COD_COMPRA),
 	FOREIGN KEY (COD_PRODUCTO) REFERENCES PRODUCTO,
 	FOREIGN KEY (COD_COMPRA) REFERENCES COMPRA
 );
@@ -123,7 +125,7 @@ CREATE TABLE ENVIO
 	COD_COMPRA INT,
 	COD_EMPRENDEDOR INT,
 	COD_REPARTO INT,
-	PRIMARY KEY(COD_EMPRENDEDOR, COD_REPARTO),
+	PRIMARY KEY(COD_EMPRENDEDOR, COD_REPARTO, COD_COMPRA, COD_DIRECCION),
 	FOREIGN KEY (COD_DIRECCION, COD_COMPRA) REFERENCES COMPRA,
 	FOREIGN KEY (COD_EMPRENDEDOR) REFERENCES EMPRENDEDOR,
 	FOREIGN KEY (COD_REPARTO) REFERENCES EMPRESAREPARTO
@@ -215,36 +217,38 @@ INSERT INTO EMPRENDEDOR Values (14,'Empresa14','Faustina Jeronima Espinoza Barbe
 INSERT INTO EMPRENDEDOR Values (15,'Empresa15','Rocio Dominga Arce Toro','Empresa15@gmail.com','@Empresa15','Empresa15',15);
 INSERT INTO EMPRENDEDOR Values (16,'Empresa16','Jon Bernat Santamaria Barragan','Empresa16@gmail.com','@Empresa16','Empresa16',16);
 
-INSERT INTO PRODUCTO Values (1,'Producto','',1,1,1);
-INSERT INTO PRODUCTO Values (2,'','',1,1,1);
-INSERT INTO PRODUCTO Values (3,'','',1,1,1);
-INSERT INTO PRODUCTO Values (4,'','',1,1,1);
-INSERT INTO PRODUCTO Values (5,'','',1,1,1);
-INSERT INTO PRODUCTO Values (6,'','',1,1,1);
-INSERT INTO PRODUCTO Values (7,'','',1,1,1);
-INSERT INTO PRODUCTO Values (8,'','',1,1,1);
-INSERT INTO PRODUCTO Values (9,'','',1,1,1);
-INSERT INTO PRODUCTO Values (10,'','',1,1,1);
-INSERT INTO PRODUCTO Values (11,'','',1,1,1);
-INSERT INTO PRODUCTO Values (12,'','',1,1,1);
-INSERT INTO PRODUCTO Values (13,'','',1,1,1);
-INSERT INTO PRODUCTO Values (14,'','',1,1,1);
-INSERT INTO PRODUCTO Values (15,'','',1,1,1);
-INSERT INTO PRODUCTO Values (16,'','',1,1,1);
-INSERT INTO PRODUCTO Values (17,'','',1,1,1);
-INSERT INTO PRODUCTO Values (18,'','',1,1,1);
-INSERT INTO PRODUCTO Values (19,'','',1,1,1);
-INSERT INTO PRODUCTO Values (20,'','',1,1,1);
-INSERT INTO PRODUCTO Values (21,'','',1,1,1);
-INSERT INTO PRODUCTO Values (22,'','',1,1,1);
-INSERT INTO PRODUCTO Values (23,'','',1,1,1);
-INSERT INTO PRODUCTO Values (24,'','',1,1,1);
-INSERT INTO PRODUCTO Values (25,'','',1,1,1);
-INSERT INTO PRODUCTO Values (26,'','',1,1,1);
-INSERT INTO PRODUCTO Values (27,'','',1,1,1);
-INSERT INTO PRODUCTO Values (28,'','',1,1,1);
-INSERT INTO PRODUCTO Values (29,'','',1,1,1);
-INSERT INTO PRODUCTO Values (30,'','',1,1,1);
+INSERT INTO PRODUCTO Values (1,'Producto1','Unidad',1,1,1);
+INSERT INTO PRODUCTO Values (2,'Producto2','Unidad',1,1,1);
+INSERT INTO PRODUCTO Values (3,'Producto3','Unidad',1,1,2);
+INSERT INTO PRODUCTO Values (4,'Producto4','Unidad',1,1,2);
+INSERT INTO PRODUCTO Values (5,'Producto5','Unidad',1,1,3);
+INSERT INTO PRODUCTO Values (6,'Producto6','Unidad',1,1,3);
+INSERT INTO PRODUCTO Values (7,'Producto7','Unidad',1,1,4);
+INSERT INTO PRODUCTO Values (8,'Producto8','Unidad',1,1,4);
+INSERT INTO PRODUCTO Values (9,'Producto9','Unidad',1,1,5);
+INSERT INTO PRODUCTO Values (10,'Producto10','Unidad',1,1,5);
+INSERT INTO PRODUCTO Values (11,'Producto11','Unidad',1,1,6);
+INSERT INTO PRODUCTO Values (12,'Producto12','Unidad',1,1,6);
+INSERT INTO PRODUCTO Values (13,'Producto13','Unidad',1,1,7);
+INSERT INTO PRODUCTO Values (14,'Producto14','Unidad',1,1,7);
+INSERT INTO PRODUCTO Values (15,'Producto15','Unidad',1,1,8);
+INSERT INTO PRODUCTO Values (16,'Producto16','Unidad',1,1,8);
+INSERT INTO PRODUCTO Values (17,'Producto17','Unidad',1,1,9);
+INSERT INTO PRODUCTO Values (18,'Producto18','Unidad',1,1,9);
+INSERT INTO PRODUCTO Values (19,'Producto19','Unidad',1,1,10);
+INSERT INTO PRODUCTO Values (20,'Producto20','Unidad',1,1,10);
+INSERT INTO PRODUCTO Values (21,'Producto21','Unidad',1,1,11);
+INSERT INTO PRODUCTO Values (22,'Producto22','Unidad',1,1,11);
+INSERT INTO PRODUCTO Values (23,'Producto23','Unidad',1,1,12);
+INSERT INTO PRODUCTO Values (24,'Producto24','Unidad',1,1,12);
+INSERT INTO PRODUCTO Values (25,'Producto25','Unidad',1,1,13);
+INSERT INTO PRODUCTO Values (26,'Producto26','Unidad',1,1,13);
+INSERT INTO PRODUCTO Values (27,'Producto27','Unidad',1,1,14);
+INSERT INTO PRODUCTO Values (28,'Producto28','Unidad',1,1,14);
+INSERT INTO PRODUCTO Values (29,'Producto29','Unidad',1,1,15);
+INSERT INTO PRODUCTO Values (30,'Producto30','Unidad',1,1,15);
+INSERT INTO PRODUCTO Values (31,'Producto31','Unidad',1,1,16);
+INSERT INTO PRODUCTO Values (32,'Producto32','Unidad',1,1,16);
 
 INSERT INTO CLIENTE Values ('11.066.621-7','Mirian Jessica Cantero Piñero');
 INSERT INTO CLIENTE Values ('17.873.223-4','Amador Andres Jerez Garca');
@@ -263,23 +267,6 @@ INSERT INTO CLIENTE Values ('13.181.120-9','Gloria Myriam Garca Bosch');
 INSERT INTO CLIENTE Values ('14.280.137-k','Luis Victor Guijarro Rocha');
 INSERT INTO CLIENTE Values ('12.016.783-9','Sofia Antonia Capdevila Valencia');
 
-INSERT INTO COMPRA Values (1,'','','','',1);
-INSERT INTO COMPRA Values (1,'','','','',1);
-INSERT INTO COMPRA Values (1,'','','','',1);
-INSERT INTO COMPRA Values (1,'','','','',1);
-INSERT INTO COMPRA Values (1,'','','','',1);
-INSERT INTO COMPRA Values (1,'','','','',1);
-INSERT INTO COMPRA Values (1,'','','','',1);
-INSERT INTO COMPRA Values (1,'','','','',1);
-INSERT INTO COMPRA Values (1,'','','','',1);
-INSERT INTO COMPRA Values (1,'','','','',1);
-INSERT INTO COMPRA Values (1,'','','','',1);
-INSERT INTO COMPRA Values (1,'','','','',1);
-INSERT INTO COMPRA Values (1,'','','','',1);
-INSERT INTO COMPRA Values (1,'','','','',1);
-INSERT INTO COMPRA Values (1,'','','','',1);
-INSERT INTO COMPRA Values (1,'','','','',1);
-
 INSERT INTO DIRECCION Values (1,'','',1,1);
 INSERT INTO DIRECCION Values (1,'','',1,1);
 INSERT INTO DIRECCION Values (1,'','',1,1);
@@ -297,6 +284,74 @@ INSERT INTO DIRECCION Values (1,'','',1,1);
 INSERT INTO DIRECCION Values (1,'','',1,1);
 INSERT INTO DIRECCION Values (1,'','',1,1);
 
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+
+INSERT INTO EVALUA Values (1,'','',1);
+INSERT INTO EVALUA Values (1,'','',1);
+INSERT INTO EVALUA Values (1,'','',1);
+INSERT INTO EVALUA Values (1,'','',1);
+INSERT INTO EVALUA Values (1,'','',1);
+INSERT INTO EVALUA Values (1,'','',1);
+INSERT INTO EVALUA Values (1,'','',1);
+INSERT INTO EVALUA Values (1,'','',1);
+INSERT INTO EVALUA Values (1,'','',1);
+INSERT INTO EVALUA Values (1,'','',1);
+INSERT INTO EVALUA Values (1,'','',1);
+INSERT INTO EVALUA Values (1,'','',1);
+INSERT INTO EVALUA Values (1,'','',1);
+INSERT INTO EVALUA Values (1,'','',1);
+INSERT INTO EVALUA Values (1,'','',1);
+INSERT INTO EVALUA Values (1,'','',1);
+
+INSERT INTO REALIZA Values ('',1);
+INSERT INTO REALIZA Values ('',1);
+INSERT INTO REALIZA Values ('',1);
+INSERT INTO REALIZA Values ('',1);
+INSERT INTO REALIZA Values ('',1);
+INSERT INTO REALIZA Values ('',1);
+INSERT INTO REALIZA Values ('',1);
+INSERT INTO REALIZA Values ('',1);
+INSERT INTO REALIZA Values ('',1);
+INSERT INTO REALIZA Values ('',1);
+INSERT INTO REALIZA Values ('',1);
+INSERT INTO REALIZA Values ('',1);
+INSERT INTO REALIZA Values ('',1);
+INSERT INTO REALIZA Values ('',1);
+INSERT INTO REALIZA Values ('',1);
+INSERT INTO REALIZA Values ('',1);
+
+INSERT INTO ORIGINA Values (1,1,1,1);
+INSERT INTO ORIGINA Values (1,1,1,1);
+INSERT INTO ORIGINA Values (1,1,1,1);
+INSERT INTO ORIGINA Values (1,1,1,1);
+INSERT INTO ORIGINA Values (1,1,1,1);
+INSERT INTO ORIGINA Values (1,1,1,1);
+INSERT INTO ORIGINA Values (1,1,1,1);
+INSERT INTO ORIGINA Values (1,1,1,1);
+INSERT INTO ORIGINA Values (1,1,1,1);
+INSERT INTO ORIGINA Values (1,1,1,1);
+INSERT INTO ORIGINA Values (1,1,1,1);
+INSERT INTO ORIGINA Values (1,1,1,1);
+INSERT INTO ORIGINA Values (1,1,1,1);
+INSERT INTO ORIGINA Values (1,1,1,1);
+INSERT INTO ORIGINA Values (1,1,1,1);
+INSERT INTO ORIGINA Values (1,1,1,1);
+
 INSERT INTO TIENE Values ('',1);
 INSERT INTO TIENE Values ('',1);
 INSERT INTO TIENE Values ('',1);
@@ -330,6 +385,23 @@ INSERT INTO DESPACHO Values ('',1,1,'//');
 INSERT INTO DESPACHO Values ('',1,1,'//');
 INSERT INTO DESPACHO Values ('',1,1,'//');
 INSERT INTO DESPACHO Values ('',1,1,'//');
+
+INSERT INTO ENVIO Values ('','',1,1,1,1);
+INSERT INTO ENVIO Values ('','',1,1,1,1);
+INSERT INTO ENVIO Values ('','',1,1,1,1);
+INSERT INTO ENVIO Values ('','',1,1,1,1);
+INSERT INTO ENVIO Values ('','',1,1,1,1);
+INSERT INTO ENVIO Values ('','',1,1,1,1);
+INSERT INTO ENVIO Values ('','',1,1,1,1);
+INSERT INTO ENVIO Values ('','',1,1,1,1);
+INSERT INTO ENVIO Values ('','',1,1,1,1);
+INSERT INTO ENVIO Values ('','',1,1,1,1);
+INSERT INTO ENVIO Values ('','',1,1,1,1);
+INSERT INTO ENVIO Values ('','',1,1,1,1);
+INSERT INTO ENVIO Values ('','',1,1,1,1);
+INSERT INTO ENVIO Values ('','',1,1,1,1);
+INSERT INTO ENVIO Values ('','',1,1,1,1);
+INSERT INTO ENVIO Values ('','',1,1,1,1);
 
 INSERT INTO CUBRE Values (1,1);
 INSERT INTO CUBRE Values (1,1);
