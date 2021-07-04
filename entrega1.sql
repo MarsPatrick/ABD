@@ -50,8 +50,7 @@ CREATE TABLE CLIENTE
 (
 	RUT_CLIENTE VARCHAR(20),
 	NOM_CLIENTE VARCHAR(20),
-	PRIMARY KEY(RUT_CLIENTE),
-	FOREIGN KEY (COD_PRODUCTO) REFERENCES PRODUCTO
+	PRIMARY KEY(RUT_CLIENTE)
 );
 
 CREATE TABLE DIRECCION
@@ -241,22 +240,22 @@ Values	(1,'','',1,1,1),
 	(1,'','',1,1,1),
 
 INSERT INTO CLIENTE
-Values	('','',1,1,''),
-	('','',1,1,''),
-	('','',1,1,''),
-	('','',1,1,''),
-	('','',1,1,''),
-	('','',1,1,''),
-	('','',1,1,''),
-	('','',1,1,''),
-	('','',1,1,''),
-	('','',1,1,''),
-	('','',1,1,''),
-	('','',1,1,''),
-	('','',1,1,''),
-	('','',1,1,''),
-	('','',1,1,''),
-	('','',1,1,''),
+Values	('11.066.621-7','Mirian Jessica Cantero Piñero'),
+	('17.873.223-4','Amador Andres Jerez Garca'),
+	('6.434.134-0','Casimiro Manolo Orozco Cobos'),
+	('8.715.774-1','Luna Sarai Campillo Salas'),
+	('17.186.593-k','Iker Fernando Mota Sousa'),
+	('19.068.608-6','Moises Candido Segura Canales'),
+	('18.211.726-9','Jennifer Elsa Reyes Quiñones'),
+	('18.653.702-5','Maria Adela Fidalgo Mansilla'),
+	('19.983.237-9','Jesus Axel Rodenas Zamorano'),
+	('15.516.724-6','Edgar Baldomero Galera Ochoa'),
+	('9.398.010-7','Mateo Jose Aguado Pardo'),
+	('10.212.805-2','Alfonso Avelino Garriga Prats'),
+	('18.384.256-0','Clotilde Anais Vallejo Roman'),
+	('13.181.120-9','Gloria Myriam Garca Bosch'),
+	('14.280.137-k','Luis Victor Guijarro Rocha'),
+	('12.016.783-9','Sofia Antonia Capdevila Valencia'),
 
 INSERT INTO COMPRA
 Values	(1,'','','','',1),
