@@ -215,141 +215,135 @@ INSERT INTO EMPRENDEDOR Values (14,'Empresa14','Faustina Jeronima Espinoza Barbe
 INSERT INTO EMPRENDEDOR Values (15,'Empresa15','Rocio Dominga Arce Toro','Empresa15@gmail.com','@Empresa15','Empresa15',15);
 INSERT INTO EMPRENDEDOR Values (16,'Empresa16','Jon Bernat Santamaria Barragan','Empresa16@gmail.com','@Empresa16','Empresa16',16);
 
-INSERT INTO PRODUCTO Values (1,'','',1,1,1),
-	(2,'','',1,1,1),
-	(3,'','',1,1,1),
-	(4,'','',1,1,1),
-	(5,'','',1,1,1),
-	(6,'','',1,1,1),
-	(7,'','',1,1,1),
-	(8,'','',1,1,1),
-	(9,'','',1,1,1),
-	(10,'','',1,1,1),
-	(11,'','',1,1,1),
-	(12,'','',1,1,1),
-	(13,'','',1,1,1),
-	(14,'','',1,1,1),
-	(15,'','',1,1,1),
-	(16,'','',1,1,1),
-	(17,'','',1,1,1),
-	(18,'','',1,1,1),
-	(19,'','',1,1,1),
-	(20,'','',1,1,1),
-	(21,'','',1,1,1),
-	(22,'','',1,1,1),
-	(23,'','',1,1,1),
-	(24,'','',1,1,1),
-	(25,'','',1,1,1),
-	(26,'','',1,1,1),
-	(27,'','',1,1,1),
-	(28,'','',1,1,1),
-	(29,'','',1,1,1),
-	(30,'','',1,1,1)
+INSERT INTO PRODUCTO Values (1,'Producto','',1,1,1);
+INSERT INTO PRODUCTO Values (2,'','',1,1,1);
+INSERT INTO PRODUCTO Values (3,'','',1,1,1);
+INSERT INTO PRODUCTO Values (4,'','',1,1,1);
+INSERT INTO PRODUCTO Values (5,'','',1,1,1);
+INSERT INTO PRODUCTO Values (6,'','',1,1,1);
+INSERT INTO PRODUCTO Values (7,'','',1,1,1);
+INSERT INTO PRODUCTO Values (8,'','',1,1,1);
+INSERT INTO PRODUCTO Values (9,'','',1,1,1);
+INSERT INTO PRODUCTO Values (10,'','',1,1,1);
+INSERT INTO PRODUCTO Values (11,'','',1,1,1);
+INSERT INTO PRODUCTO Values (12,'','',1,1,1);
+INSERT INTO PRODUCTO Values (13,'','',1,1,1);
+INSERT INTO PRODUCTO Values (14,'','',1,1,1);
+INSERT INTO PRODUCTO Values (15,'','',1,1,1);
+INSERT INTO PRODUCTO Values (16,'','',1,1,1);
+INSERT INTO PRODUCTO Values (17,'','',1,1,1);
+INSERT INTO PRODUCTO Values (18,'','',1,1,1);
+INSERT INTO PRODUCTO Values (19,'','',1,1,1);
+INSERT INTO PRODUCTO Values (20,'','',1,1,1);
+INSERT INTO PRODUCTO Values (21,'','',1,1,1);
+INSERT INTO PRODUCTO Values (22,'','',1,1,1);
+INSERT INTO PRODUCTO Values (23,'','',1,1,1);
+INSERT INTO PRODUCTO Values (24,'','',1,1,1);
+INSERT INTO PRODUCTO Values (25,'','',1,1,1);
+INSERT INTO PRODUCTO Values (26,'','',1,1,1);
+INSERT INTO PRODUCTO Values (27,'','',1,1,1);
+INSERT INTO PRODUCTO Values (28,'','',1,1,1);
+INSERT INTO PRODUCTO Values (29,'','',1,1,1);
+INSERT INTO PRODUCTO Values (30,'','',1,1,1);
 
-INSERT INTO CLIENTE
-Values	('11.066.621-7','Mirian Jessica Cantero Piñero'),
-	('17.873.223-4','Amador Andres Jerez Garca'),
-	('6.434.134-0','Casimiro Manolo Orozco Cobos'),
-	('8.715.774-1','Luna Sarai Campillo Salas'),
-	('17.186.593-k','Iker Fernando Mota Sousa'),
-	('19.068.608-6','Moises Candido Segura Canales'),
-	('18.211.726-9','Jennifer Elsa Reyes Quiñones'),
-	('18.653.702-5','Maria Adela Fidalgo Mansilla'),
-	('19.983.237-9','Jesus Axel Rodenas Zamorano'),
-	('15.516.724-6','Edgar Baldomero Galera Ochoa'),
-	('9.398.010-7','Mateo Jose Aguado Pardo'),
-	('10.212.805-2','Alfonso Avelino Garriga Prats'),
-	('18.384.256-0','Clotilde Anais Vallejo Roman'),
-	('13.181.120-9','Gloria Myriam Garca Bosch'),
-	('14.280.137-k','Luis Victor Guijarro Rocha'),
-	('12.016.783-9','Sofia Antonia Capdevila Valencia'),
+INSERT INTO CLIENTE Values ('11.066.621-7','Mirian Jessica Cantero Piñero');
+INSERT INTO CLIENTE Values ('17.873.223-4','Amador Andres Jerez Garca');
+INSERT INTO CLIENTE Values ('6.434.134-0','Casimiro Manolo Orozco Cobos');
+INSERT INTO CLIENTE Values ('8.715.774-1','Luna Sarai Campillo Salas');
+INSERT INTO CLIENTE Values ('17.186.593-k','Iker Fernando Mota Sousa');
+INSERT INTO CLIENTE Values ('19.068.608-6','Moises Candido Segura Canales');
+INSERT INTO CLIENTE Values ('18.211.726-9','Jennifer Elsa Reyes Quiñones');
+INSERT INTO CLIENTE Values ('18.653.702-5','Maria Adela Fidalgo Mansilla');
+INSERT INTO CLIENTE Values ('19.983.237-9','Jesus Axel Rodenas Zamorano');
+INSERT INTO CLIENTE Values ('15.516.724-6','Edgar Baldomero Galera Ochoa');
+INSERT INTO CLIENTE Values ('9.398.010-7','Mateo Jose Aguado Pardo');
+INSERT INTO CLIENTE Values ('10.212.805-2','Alfonso Avelino Garriga Prats');
+INSERT INTO CLIENTE Values ('18.384.256-0','Clotilde Anais Vallejo Roman');
+INSERT INTO CLIENTE Values ('13.181.120-9','Gloria Myriam Garca Bosch');
+INSERT INTO CLIENTE Values ('14.280.137-k','Luis Victor Guijarro Rocha');
+INSERT INTO CLIENTE Values ('12.016.783-9','Sofia Antonia Capdevila Valencia');
 
-INSERT INTO COMPRA
-Values	(1,'','','','',1),
-	(1,'','','','',1),
-	(1,'','','','',1),
-	(1,'','','','',1),
-	(1,'','','','',1),
-	(1,'','','','',1),
-	(1,'','','','',1),
-	(1,'','','','',1),
-	(1,'','','','',1),
-	(1,'','','','',1),
-	(1,'','','','',1),
-	(1,'','','','',1),
-	(1,'','','','',1),
-	(1,'','','','',1),
-	(1,'','','','',1),
-	(1,'','','','',1),
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
+INSERT INTO COMPRA Values (1,'','','','',1);
 
-INSERT INTO DIRECCION
-Values	(1,'','',1,1),
-	(1,'','',1,1),
-	(1,'','',1,1),
-	(1,'','',1,1),
-	(1,'','',1,1),
-	(1,'','',1,1),
-	(1,'','',1,1),
-	(1,'','',1,1),
-	(1,'','',1,1),
-	(1,'','',1,1),
-	(1,'','',1,1),
-	(1,'','',1,1),
-	(1,'','',1,1),
-	(1,'','',1,1),
-	(1,'','',1,1),
-	(1,'','',1,1),
+INSERT INTO DIRECCION Values (1,'','',1,1);
+INSERT INTO DIRECCION Values (1,'','',1,1);
+INSERT INTO DIRECCION Values (1,'','',1,1);
+INSERT INTO DIRECCION Values (1,'','',1,1);
+INSERT INTO DIRECCION Values (1,'','',1,1);
+INSERT INTO DIRECCION Values (1,'','',1,1);
+INSERT INTO DIRECCION Values (1,'','',1,1);
+INSERT INTO DIRECCION Values (1,'','',1,1);
+INSERT INTO DIRECCION Values (1,'','',1,1);
+INSERT INTO DIRECCION Values (1,'','',1,1);
+INSERT INTO DIRECCION Values (1,'','',1,1);
+INSERT INTO DIRECCION Values (1,'','',1,1);
+INSERT INTO DIRECCION Values (1,'','',1,1);
+INSERT INTO DIRECCION Values (1,'','',1,1);
+INSERT INTO DIRECCION Values (1,'','',1,1);
+INSERT INTO DIRECCION Values (1,'','',1,1);
 
-INSERT INTO TIENE
-Values	('',1),
-	('',1),
-	('',1),
-	('',1),
-	('',1),
-	('',1),
-	('',1),
-	('',1),
-	('',1),
-	('',1),
-	('',1),
-	('',1),
-	('',1),
-	('',1),
-	('',1),
-	('',1),
+INSERT INTO TIENE Values ('',1);
+INSERT INTO TIENE Values ('',1);
+INSERT INTO TIENE Values ('',1);
+INSERT INTO TIENE Values ('',1);
+INSERT INTO TIENE Values ('',1);
+INSERT INTO TIENE Values ('',1);
+INSERT INTO TIENE Values ('',1);
+INSERT INTO TIENE Values ('',1);
+INSERT INTO TIENE Values ('',1);
+INSERT INTO TIENE Values ('',1);
+INSERT INTO TIENE Values ('',1);
+INSERT INTO TIENE Values ('',1);
+INSERT INTO TIENE Values ('',1);
+INSERT INTO TIENE Values ('',1);
+INSERT INTO TIENE Values ('',1);
+INSERT INTO TIENE Values ('',1);
 
-INSERT INTO DESPACHO
-Values	('',1,1,'//'),
-	('',1,1,'//'),
-	('',1,1,'//'),
-	('',1,1,'//'),
-	('',1,1,'//'),
-	('',1,1,'//'),
-	('',1,1,'//'),
-	('',1,1,'//'),
-	('',1,1,'//'),
-	('',1,1,'//'),
-	('',1,1,'//'),
-	('',1,1,'//'),
-	('',1,1,'//'),
-	('',1,1,'//'),
-	('',1,1,'//'),
-	('',1,1,'//'),
+INSERT INTO DESPACHO Values ('',1,1,'//');
+INSERT INTO DESPACHO Values ('',1,1,'//');
+INSERT INTO DESPACHO Values ('',1,1,'//');
+INSERT INTO DESPACHO Values ('',1,1,'//');
+INSERT INTO DESPACHO Values ('',1,1,'//');
+INSERT INTO DESPACHO Values ('',1,1,'//');
+INSERT INTO DESPACHO Values ('',1,1,'//');
+INSERT INTO DESPACHO Values ('',1,1,'//');
+INSERT INTO DESPACHO Values ('',1,1,'//');
+INSERT INTO DESPACHO Values ('',1,1,'//');
+INSERT INTO DESPACHO Values ('',1,1,'//');
+INSERT INTO DESPACHO Values ('',1,1,'//');
+INSERT INTO DESPACHO Values ('',1,1,'//');
+INSERT INTO DESPACHO Values ('',1,1,'//');
+INSERT INTO DESPACHO Values ('',1,1,'//');
+INSERT INTO DESPACHO Values ('',1,1,'//');
 
-INSERT INTO CUBRE
-Values	(1,1),
-	(1,1),
-	(1,1),
-	(1,1),
-	(1,1),
-	(1,1),
-	(1,1),
-	(1,1),
-	(1,1),
-	(1,1),
-	(1,1),
-	(1,1),
-	(1,1),
-	(1,1),
-	(1,1),
-	(1,1),
+INSERT INTO CUBRE Values (1,1);
+INSERT INTO CUBRE Values (1,1);
+INSERT INTO CUBRE Values (1,1);
+INSERT INTO CUBRE Values (1,1);
+INSERT INTO CUBRE Values (1,1);
+INSERT INTO CUBRE Values (1,1);
+INSERT INTO CUBRE Values (1,1);
+INSERT INTO CUBRE Values (1,1);
+INSERT INTO CUBRE Values (1,1);
+INSERT INTO CUBRE Values (1,1);
+INSERT INTO CUBRE Values (1,1);
+INSERT INTO CUBRE Values (1,1);
+INSERT INTO CUBRE Values (1,1);
+INSERT INTO CUBRE Values (1,1);
+INSERT INTO CUBRE Values (1,1);
+INSERT INTO CUBRE Values (1,1);
