@@ -156,88 +156,95 @@ DROP TABLE EMPRESAREPARTO;
 1) EMPRENDEDOR QUE MAS VENTA TIENE EN SEPTIEMBRE
 2) CLIENTES QUE NO COMPRAN DURANTE DESDE JULIO 2020
 
-INSERT INTO EMPRESAREPARTO
-VALUES	(1,'STARKEN'),
-	(2,'CHILEXPRESS'),
-	(3,'BLUEXPRESS'),
-	(4,'CORREOSCHILE'),
-	(5,'DHL'),
-	(6,'FEDEX'),
-	(7,'TNT');
+INSERT INTO EMPRESAREPARTO VALUES (1,'STARKEN');
+INSERT INTO EMPRESAREPARTO VALUES (2,'CHILEXPRESS');
+INSERT INTO EMPRESAREPARTO VALUES (3,'BLUEXPRESS');
+INSERT INTO EMPRESAREPARTO VALUES (4,'CORREOSCHILE');
+INSERT INTO EMPRESAREPARTO VALUES (5,'DHL');
+INSERT INTO EMPRESAREPARTO VALUES (6,'FEDEX');
+INSERT INTO EMPRESAREPARTO VALUES (7,'TNT');
 
-INSERT INTO Region
-Values 	(1,'Arica y Parinacota'),
-	(2,'Tarapaca'),
-	(3,'Antofagasta'),
-	(4,'Atacama'),
-	(5,'Coquimbo'),
-	(6,'Valparaiso'),
-	(7,'Metropolitana de Santiago'),
-	(8,'Libertador General Bernardo O’Higgins'),
-	(9,'Maule'),
-	(10,'Ñuble'),
-	(11,'Biobio'),
-	(12,'La Araucania'),
-	(13,'Los Rios'),
-	(14,'Los Lagos'),
-	(15,'Aysén del General Carlos Ibañez del Campo'),
-	(16,'Magallanes y Antártica Chilena');
+INSERT INTO Region Values (1,'Arica y Parinacota');
+INSERT INTO Region Values (2,'Tarapaca');
+INSERT INTO Region Values (3,'Antofagasta');
+INSERT INTO Region Values (4,'Atacama');
+INSERT INTO Region Values (5,'Coquimbo');
+INSERT INTO Region Values (6,'Valparaiso');
+INSERT INTO Region Values (7,'Metropolitana de Santiago');
+INSERT INTO Region Values (8,'Libertador General Bernardo O’Higgins');
+INSERT INTO Region Values (9,'Maule');
+INSERT INTO Region Values (10,'Ñuble');
+INSERT INTO Region Values (11,'Biobio');
+INSERT INTO Region Values (12,'La Araucania');
+INSERT INTO Region Values (13,'Los Rios');
+INSERT INTO Region Values (14,'Los Lagos');
+INSERT INTO Region Values (15,'Aysén del General Carlos Ibañez del Campo');
+INSERT INTO Region Values (16,'Magallanes y Antártica Chilena');
 
-INSERT INTO Ciudad
-Values	(1,'Arica',1),
-	(2,'Iquique',2),
-	(3,'Antofagasta',3),
-	(4,'Copiapo',4),
-	(5,'La Serena',5),
-	(6,'Valparaiso',6),
-	(7,'Santiago',7),
-	(8,'Rancagua',8),
-	(9,'Talca',9),
-	(10,'Chillan',10),
-	(11,'Concepcion',11),
-	(12,'Temuco',12),
-	(13,'Valdivia',13),
-	(14,'Puerto Montt',14),
-	(15,'Coyhaique',15),
-	(16,'Punta Arenas',16);
+INSERT INTO Ciudad Values (1,'Arica',1);
+INSERT INTO Ciudad Values (2,'Iquique',2);
+INSERT INTO Ciudad Values (3,'Antofagasta',3);
+INSERT INTO Ciudad Values (4,'Copiapo',4);
+INSERT INTO Ciudad Values (5,'La Serena',5);
+INSERT INTO Ciudad Values (6,'Valparaiso',6);
+INSERT INTO Ciudad Values (7,'Santiago',7);
+INSERT INTO Ciudad Values (8,'Rancagua',8);
+INSERT INTO Ciudad Values (9,'Talca',9);
+INSERT INTO Ciudad Values (10,'Chillan',10);
+INSERT INTO Ciudad Values (11,'Concepcion',11);
+INSERT INTO Ciudad Values (12,'Temuco',12);
+INSERT INTO Ciudad Values (13,'Valdivia',13);
+INSERT INTO Ciudad Values (14,'Puerto Montt',14);
+INSERT INTO Ciudad Values (15,'Coyhaique',15);
+INSERT INTO Ciudad Values (16,'Punta Arenas',16);
 
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+INSERT INTO EMPRENDEDOR Values (1,'Plush Candy','Gregoria Lina Tapia Salgado','plushcandy@gmail.com','@plushcandy','PlushCandy',1);
+INSERT INTO EMPRENDEDOR Values (2,'Fast Mobile','Alexander Ibai Pastor Carro','fastmobile@gmail.com','@fastmobile','fastmobile',2);
+INSERT INTO EMPRENDEDOR Values (3,'ChocoMan','Cesar Dario Arellano Mera','chocoman@gmail.com','@chocoman','chocoman',3);
+INSERT INTO EMPRENDEDOR Values (4,'Tasty Pops','Julio Francisco Mata Villanueva','tastypops@gmail.com','@tastypops','TastyPops',4);
+INSERT INTO EMPRENDEDOR Values (5,'SupraPhone','Cristina Lorenza Jurado Robles','supraphone@gmail.com','@supraphone','supraphone',5);
+INSERT INTO EMPRENDEDOR Values (6,'WonderCacao','Maria Jesica Romero Guijarro','wondercacao@gmail.com','@wondercacao','wondercacao',6);
+INSERT INTO EMPRENDEDOR Values (7,'Empresa7','Delia Maravillas Palazon Villena','Empresa7@gmail.com','@Empresa7','Empresa7',7);
+INSERT INTO EMPRENDEDOR Values (8,'Empresa8','Eulogio Younes Toribio Burgos','Empresa8@gmail.com','@Empresa8','Empresa8',8);
+INSERT INTO EMPRENDEDOR Values (9,'Empresa9','Arantza Alejandra Vizcaino Serra','Empresa9@gmail.com','@Empresa9','Empresa9',9);
+INSERT INTO EMPRENDEDOR Values (10,'Empresa10','Jaime Ernesto Fajardo Revilla','Empresa10@gmail.com','@Empresa10','Empresa10',10);
+INSERT INTO EMPRENDEDOR Values (11,'Empresa11','Thiago Nelson Pacheco Flores','Empresa11@gmail.com','@Empresa11','Empresa11',11);
+INSERT INTO EMPRENDEDOR Values (12,'Empresa12','Mireia Aadelaida Melero Oviedo','Empresa12@gmail.com','@Empresa12','Empresa12',12);
+INSERT INTO EMPRENDEDOR Values (13,'Empresa13','Sergio Modesto Quiñones Villena','Empresa13@gmail.com','@Empresa13','Empresa13',13);
+INSERT INTO EMPRENDEDOR Values (14,'Empresa14','Faustina Jeronima Espinoza Barbera','Empresa14@gmail.com','@Empresa14','Empresa14',14);
+INSERT INTO EMPRENDEDOR Values (15,'Empresa15','Rocio Dominga Arce Toro','Empresa15@gmail.com','@Empresa15','Empresa15',15);
+INSERT INTO EMPRENDEDOR Values (16,'Empresa16','Jon Bernat Santamaria Barragan','Empresa16@gmail.com','@Empresa16','Empresa16',16);
 
-INSERT INTO EMPRENDEDOR
-Values	(1,'Plush Candy','Gregoria Lina Tapia Salgado','plushcandy@gmail.com','@plushcandy','PlushCandy',1),
-	(2,'Fast Mobile','Alexander Ibai Pastor Carro','fastmobile@gmail.com','@fastmobile','fastmobile',2),
-	(3,'','Delia Maravillas Palazon Villena','@gmail.com','@','',3),
-	(4,'ChocoMan','Cesar Dario Arellano Mera','chocoman@gmail.com','@chocoman','chocoman',4),
-	(5,'','Eulogio Younes Toribio Burgos','@gmail.com','@','',5),
-	(6,'','Arantza Alejandra Vizcaino Serra','@gmail.com','@','',6),
-	(7,'','Jaime Ernesto Fajardo Revilla','@gmail.com','@','',7),
-	(8,'','Thiago Nelson Pacheco Flores','@gmail.com','@','',8),
-	(9,'Tasty Pops','Julio Francisco Mata Villanueva','tastypops@gmail.com','@tastypops','TastyPops',9),
-	(10,'SupraPhone','Cristina Lorenza Jurado Robles','supraphone@gmail.com','@supraphone','supraphone',10),
-	(11,'','Mireia Aadelaida Melero Oviedo','@gmail.com','@','',11),
-	(12,'WonderCacao','Maria Jesica Romero Guijarro','wondercacao@gmail.com','@wondercacao','wondercacao',12),
-	(13,'','Sergio Modesto Quiñones Villena','@gmail.com','@','',13),
-	(14,'','Faustina Jeronima Espinoza Barbera','@gmail.com','@','',14),
-	(15,'','Rocio Dominga Arce Toro','@gmail.com','@','',15),
-	(16,'','Jon Bernat Santamaria Barragan','@gmail.com','@','',16),
-
-INSERT INTO PRODUCTO
-Values	(1,'','',1,1,1),
-	(1,'','',1,1,1),
-	(1,'','',1,1,1),
-	(1,'','',1,1,1),
-	(1,'','',1,1,1),
-	(1,'','',1,1,1),
-	(1,'','',1,1,1),
-	(1,'','',1,1,1),
-	(1,'','',1,1,1),
-	(1,'','',1,1,1),
-	(1,'','',1,1,1),
-	(1,'','',1,1,1),
-	(1,'','',1,1,1),
-	(1,'','',1,1,1),
-	(1,'','',1,1,1),
-	(1,'','',1,1,1),
+INSERT INTO PRODUCTO Values (1,'','',1,1,1),
+	(2,'','',1,1,1),
+	(3,'','',1,1,1),
+	(4,'','',1,1,1),
+	(5,'','',1,1,1),
+	(6,'','',1,1,1),
+	(7,'','',1,1,1),
+	(8,'','',1,1,1),
+	(9,'','',1,1,1),
+	(10,'','',1,1,1),
+	(11,'','',1,1,1),
+	(12,'','',1,1,1),
+	(13,'','',1,1,1),
+	(14,'','',1,1,1),
+	(15,'','',1,1,1),
+	(16,'','',1,1,1),
+	(17,'','',1,1,1),
+	(18,'','',1,1,1),
+	(19,'','',1,1,1),
+	(20,'','',1,1,1),
+	(21,'','',1,1,1),
+	(22,'','',1,1,1),
+	(23,'','',1,1,1),
+	(24,'','',1,1,1),
+	(25,'','',1,1,1),
+	(26,'','',1,1,1),
+	(27,'','',1,1,1),
+	(28,'','',1,1,1),
+	(29,'','',1,1,1),
+	(30,'','',1,1,1)
 
 INSERT INTO CLIENTE
 Values	('11.066.621-7','Mirian Jessica Cantero Piñero'),
