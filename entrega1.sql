@@ -551,3 +551,66 @@ BEGIN
 END;
 
 ENTREGA 2
+
+1)
+CREATE OR REPLACE PROCEDURE CUADRO_HONOR (MES INTEGER) IS
+    CURSOR CUADRO IS
+        SELECT e.cod_emprendedor,e.nom_dueno,ev.fecha_evaluacion , AVG(ev.nota_producto) AS promedio
+        FROM compra c, emprendedor e, origina o ,producto p,evalua ev
+        WHERE ev.cod_compra=c.cod_compra AND c.cod_compra=o.cod_compra AND o.cod_producto=p.cod_producto AND p.cod_emprendedor=e.cod_emprendedor AND MES = EXTRACT(MONTH FROM ev.fecha_evaluacion)
+        GROUP BY e.cod_emprendedor,e.nom_dueno,ev.fecha_evaluacion;
+BEGIN 
+    FOR X IN CUADRO
+        LOOP
+        IF X.promedio >=65 THEN
+            DBMS_OUTPUT.PUT_LINE( ' Nombre ' || x.nom_dueno || ' Nivel ORO');
+        ELSIF X.promedio >=60 THEN
+            DBMS_OUTPUT.PUT_LINE( ' Nombre ' || x.nom_dueno || ' Nivel PLATA');
+        ELSIF x.promedio >=55 THEN
+            DBMS_OUTPUT.PUT_LINE( ' Nombre ' || x.nom_dueno || ' Nivel BRONCE');
+        END IF;
+    END LOOP;
+END;
+
+SET SERVEROUTPUT ON;
+
+EXECUTE CUADRO_HONOR(08);
+
+2)
+CREATE OR REPLACE PROCEDURE CAMBIAR_ESTADO  IS
+    CURSOR Compras IS
+        SELECT c.cod_compra,SYSDATE-c.fecha_compra AS DIFERENCIA ,c.estado
+        FROM compra c
+        where c.estado='REGISTRADA';
+
+
+BEGIN 
+    FOR X IN Compras
+        LOOP
+        IF X.DIFERENCIA > 30 THEN
+            UPDATE COMPRA SET ESTADO='ELIMINADA' WHERE COD_COMPRA=X.COD_COMPRA;
+        END IF;
+    END LOOP;
+    END;
+
+    EXEC CAMBIAR_ESTADO;
+	
+3)
+CREATE USER ELADMINISTRADOR;
+GRANT CONNECT TO ELADMINISTRADOR;
+GRANT DBA TO ELADMINISTRADOR;
+
+CREATE USER CLIENTE1;
+GRANT CONNECT TO CLIENTE1;
+GRANT SELECT,UPDATE ON CLIENTE TO CLIENTE1;
+GRANT SELECT ON COMPRA TO CLIENTE1;
+GRANT SELECT ON PRODUCTO TO CLIENTE1;
+GRANT UPDATE ON EVALUA TO CLIENTE1;
+
+CREATE USER EMPRENDEDOR1;
+GRANT CONNECT TO EMPRENDEDOR1;
+GRANT CREATE TABLE TO EMPRENDEDOR1;
+GRANT SELECT,UPDATE ON COMPRA TO EMPRENDEDOR1;
+GRANT SELECT,UPDATE ON ENVIO TO EMPRENDEDOR1;
+GRANT SELECT,UPDATE ON EMPRENDEDOR TO EMPRENDEDOR1;
+GRANT SELECT,UPDATE ON PRODUCTO TO EMPRENDEDOR1;
